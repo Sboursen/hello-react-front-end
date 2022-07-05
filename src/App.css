@@ -1,3 +1,43 @@
 .App {
   text-align: center;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(16, 16, 16);
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(16, 16, 16);
+}
+
+.text {
+  color: goldenrod;
+}
+
+h1.text {
+  font-size: 72px;
+}
+
+p.text {
+  max-width: 70vw;
+  word-wrap: normal;
+  line-height: 48px;
+  border: solid 1px goldenrod;
+  padding: 12px;
+  border-radius: 16px;
+  font-size: 32px;
+}

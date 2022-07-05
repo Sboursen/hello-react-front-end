@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getRandomGreeting } from '../app/greeting';
+import { getGreeting } from '../app/greeting';
 
 const Greeting = () => {
   const dispatch = useDispatch();
   const greeting = useSelector((state) => state.greeting);
   useEffect(() => {
-    dispatch(getRandomGreeting({ language: 'PYTHON', codeSnippet: 'Hello' }));
+    dispatch(getGreeting());
   }, []);
 
   const { language, codeSnippet } = greeting;

@@ -1,11 +1,16 @@
 import React from 'react';
-import { Counter } from './features/counter/Counter';
+import { Route, Routes, BrowserRouter as Router } from 'react-router-dom';
+import Greeting from './components/Greeting';
 import './App.css';
 
 function App() {
   return (
     <main className="App">
-      <Counter />
+      <Router>
+        <Routes>
+          <Route path="/" element={<Greeting />} />
+        </Routes>
+      </Router>
     </main>
   );
 }
